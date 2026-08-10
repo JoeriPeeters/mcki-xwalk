@@ -1,27 +1,96 @@
+.cards {
+  /* block-scoped BPF Schilders brand palette */
+  --cards-heading-color: #6b2d7a;
+  --cards-button-color: #3f1d43;
+  --cards-button-hover-color: #55285c;
+  --cards-card-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+@media (width >= 600px) {
+  .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+@media (width >= 900px) {
+  .cards > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+.cards > ul > li {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  box-shadow: var(--cards-card-shadow);
+  overflow: hidden;
 }
 
 .cards .cards-card-image {
   line-height: 0;
 }
 
-.cards > ul > li img {
+.cards .cards-card-image img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+}
+
+.cards .cards-card-body h3 {
+  margin: 0;
+  color: var(--cards-heading-color);
+  font-size: var(--heading-font-size-m);
+  line-height: 1.2;
+}
+
+.cards .cards-card-body p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.cards .cards-card-body .button-container {
+  margin-top: 8px;
+}
+
+.cards .cards-card-body a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cards-button-color);
+  color: var(--background-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cards .cards-card-body a.button::before {
+  content: "›";
+  font-size: 1.4em;
+  line-height: 0;
+}
+
+.cards .cards-card-body a.button:hover,
+.cards .cards-card-body a.button:focus {
+  background-color: var(--cards-button-hover-color);
 }
