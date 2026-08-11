@@ -24,7 +24,8 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Image"
+              "name": "Image",
+              "model": "media-viewer-image"
             }
           }
         }
@@ -60,6 +61,12 @@
       "id": "media-viewer",
       "components": [
         "media-viewer-image"
+      ]
+    },
+    {
+      "id": "section",
+      "components": [
+        "media-viewer"
       ]
     }
   ]
