@@ -61,12 +61,6 @@
       "components": [
         "media-viewer-image"
       ]
-    },
-    {
-      "id": "section",
-      "components": [
-        "media-viewer"
-      ]
     }
   ]
 }
