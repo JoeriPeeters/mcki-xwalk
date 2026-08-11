@@ -6,20 +6,17 @@ export default function decorate(block) {
   if (items.length === 0) return;
 
   const viewer = document.createElement('media-viewer');
+  moveInstrumentation(block, viewer);
 
   items.forEach((item) => {
     const img = item.querySelector('img');
     if (!img) return;
 
-    // img blijft child van het ORIGINELE, geïnstrumenteerde item
-    // we verplaatsen niet de img zelf, maar linken 'm via slot
-    viewer.append(img.cloneNode(true));
+    const wrapper = document.createElement('span');
+    moveInstrumentation(item, wrapper);
+    wrapper.append(img);
+    viewer.append(wrapper);
   });
 
-  block.append(viewer);
-
-  // originele items verbergen i.p.v. verwijderen — UE-instrumentatie blijft intact
-  items.forEach((item) => {
-    item.style.display = 'none';
-  });
+  block.replaceChildren(viewer);
 }
