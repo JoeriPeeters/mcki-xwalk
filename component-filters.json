@@ -15,7 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "media-viewer"
     ]
   },
   {
@@ -43,12 +44,6 @@
     "id": "media-viewer",
     "components": [
       "media-viewer-image"
-    ]
-  },
-  {
-    "id": "section",
-    "components": [
-      "media-viewer"
     ]
   }
 ]
