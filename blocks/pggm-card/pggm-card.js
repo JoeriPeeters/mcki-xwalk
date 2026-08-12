@@ -18,10 +18,25 @@ export default async function decorate(block) {
   loadTokens();
   await loadPggmCard();
 
+  const [titleRow, textRow] = block.children;
+  const titleText = titleRow?.querySelector('p')?.textContent?.trim();
+  const textHTML = textRow?.innerHTML;
+
   const card = document.createElement('pggm-card');
   card.setAttribute('border', 'true');
   moveInstrumentation(block, card);
-  card.append(...block.children);
+
+  if (titleText) {
+    const heading = document.createElement('h2');
+    heading.textContent = titleText;
+    card.append(heading);
+  }
+
+  if (textHTML) {
+    const textWrapper = document.createElement('div');
+    textWrapper.innerHTML = textHTML;
+    card.append(...textWrapper.children);
+  }
 
   block.replaceChildren(card);
 }
