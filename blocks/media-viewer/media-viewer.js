@@ -11,7 +11,7 @@ export default function decorate(block) {
   moveInstrumentation(block, viewer);
 
   const timeEl = document.createElement('relative-time');
-  timeEl.setAttribute('datetime', new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString());
+  timeEl.setAttribute('datetime', new Date(Date.now()).toISOString());
   viewer.append(timeEl);
 
   block.replaceChildren(viewer);
