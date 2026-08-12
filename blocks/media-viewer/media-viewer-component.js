@@ -19,6 +19,7 @@ class MediaViewer extends HTMLElement {
         :host { display: block; border: 2px dashed green; padding: 1rem; }
       </style>
       <p>${greeting}</p>
+      <slot></slot>
     `;
   }
 }
