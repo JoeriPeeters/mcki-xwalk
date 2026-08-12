@@ -1,5 +1,6 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 import './media-viewer-component.js';
+// eslint-disable-next-line import/no-unresolved
 import 'https://esm.sh/@github/relative-time-element';
 
 export default function decorate(block) {
