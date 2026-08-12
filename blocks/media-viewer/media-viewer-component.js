@@ -1,6 +1,6 @@
 class MediaViewer extends HTMLElement {
   static get observedAttributes() {
-    return ['greeting'];
+    return ['data-greeting'];
   }
 
   connectedCallback() {
@@ -13,7 +13,7 @@ class MediaViewer extends HTMLElement {
   }
 
   render() {
-    const greeting = this.getAttribute('greeting') || 'Hello Web component !';
+    const greeting = this.dataset.greeting || 'Hello Web component !';
     this.shadowRoot.innerHTML = `
       <style>
         :host { display: block; border: 2px dashed green; padding: 1rem; }
