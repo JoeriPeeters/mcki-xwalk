@@ -1,8 +1,5 @@
-import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default async function decorate(block) {
-  console.log('RAW:', block.outerHTML);
-  await customElements.whenDefined('pggm-accordion');
+  console.log('BLOCK PARENT SECTION:', block.closest('.section')?.outerHTML);
 
   const accordion = document.createElement('pggm-accordion');
   moveInstrumentation(block, accordion);
