@@ -12,6 +12,17 @@ import {
 } from './aem.js';
 
 /**
+ * Load design system (bundle)
+ */
+const CDS_VERSION = '2.0.20';
+const CDN_BASE = `https://componenten.cdn.pfzw.nl/design-system/${CDS_VERSION}`;
+
+async function loadPggmDesignSystem() {
+  loadCSS(`${CDN_BASE}/fundamentals/stipp/tokens.css`);
+  await import(`${CDN_BASE}/components/bundle.js`);
+}
+
+/**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
  * @param {Element} to the element to copy attributes to
@@ -164,6 +175,8 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+
+  loadPggmDesignSystem(); // lazy load design system
 }
 
 /**

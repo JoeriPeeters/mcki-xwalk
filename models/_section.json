@@ -52,7 +52,8 @@
         "columns",
         "fragment",
         "media-viewer",
-        "pggm-card"
+        "pggm-card",
+        "pggm-accordion"
       ]
     }
   ]
