@@ -2,6 +2,7 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 import './media-viewer-component.js';
 
 export default function decorate(block) {
+    console.log('RAW BLOCK HTML:', block.outerHTML);
   const greetingEl = block.querySelector('[data-aue-prop="greeting"]');
   const greeting = greetingEl?.textContent?.trim() || 'Hello Web component !';
 
