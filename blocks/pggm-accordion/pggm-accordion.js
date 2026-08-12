@@ -1,5 +1,5 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
-import { htmlToElement } from '../../scripts/dom-utils.js';
+import htmlToElement from '../../scripts/dom-utils.js';
 
 export default function decorate(block) {
   const items = [...block.children].map((row) => {
