@@ -1,21 +1,27 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
-export default async function decorate(block) {
-  // 1. laadt p-elements-core
-  // → zet CustomElement/Maquette/CustomElementConfig/property op globalThis
+function loadTokens() {
+  if (document.querySelector('link[href*="tokens.css"]')) return;
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = new URL('./vendor/tokens.css', import.meta.url);
+  document.head.appendChild(link);
+}
+
+async function loadPggmCard() {
   await import('./vendor/p-elements-core.js');
-
-  // 2. fix de naam-mismatch (card.js verwacht 'Property', p-elements-core zet 'property')
   window.Property = window.property;
-
-  // 3. nu pas card.js laden — customElements.define('pggm-card', ...) draait hier
   await import('./vendor/card.js');
+}
+
+export default async function decorate(block) {
+  loadTokens();
+  await loadPggmCard();
 
   const card = document.createElement('pggm-card');
   card.setAttribute('border', 'true');
   moveInstrumentation(block, card);
-
-  [...block.children].forEach((row) => card.append(...row.children));
+  card.append(...block.children);
 
   block.replaceChildren(card);
 }

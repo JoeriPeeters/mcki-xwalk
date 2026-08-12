@@ -1,0 +1,719 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --pggm-accordion-item-background: #ffffff;
+  --pggm-accordion-item-border-width: 1px;
+  --pggm-accordion-item-content-padding-block-start: 0px;
+  --pggm-accordion-item-header-icon-border-radius: 99999px;
+  --pggm-button-icon-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-primary-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-primary-active-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-primary-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-disabled-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-tertiary-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-tertiary-background-color: rgba(0, 0, 0, 0);
+  --pggm-button-tertiary-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-tertiary-active-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-sign-in-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-sign-in-border-color: rgba(0, 0, 0, 0);
+  --pggm-button-sign-in-active-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-checked-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-checked-disabled-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-checked-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-checked-active-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-checked-invalid-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-indeterminate-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-indeterminate-disabled-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-indeterminate-active-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-indeterminate-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-checkbox-indeterminate-invalid-border-color: rgba(0, 0, 0, 0);
+  --pggm-link-text-decoration-thickness: auto;
+  --pggm-link-text-underline-offset: auto;
+  --pggm-link-text-decoration: underline;
+  --pggm-alert-border-radius: 4px;
+  --pggm-alert-max-width: 584px;
+  --pggm-radio-checked-border-color: rgba(0, 0, 0, 0);
+  --pggm-radio-checked-hover-border-color: rgba(0, 0, 0, 0);
+  --pggm-radio-checked-active-border-color: rgba(0, 0, 0, 0);
+  --pggm-radio-checked-disabled-border-color: rgba(0, 0, 0, 0);
+  --pggm-radio-checked-invalid-border-color: rgba(0, 0, 0, 0);
+  --pggm-select-max-inline-size: 488px;
+  --pggm-table-header-background-color: rgba(0, 0, 0, 0);
+  --pggm-table-footer-background-color: rgba(0, 0, 0, 0);
+  --pggm-table-row-background-color: rgba(0, 0, 0, 0);
+  --pggm-table-container-box-shadow-offset-x: 0px;
+  --pggm-text-input-content-line-height: 1;
+  --pggm-text-input-max-inline-size: 488px;
+  --pggm-textarea-max-inline-size: 400px;
+  --pggm-textarea-border-radius: 0px;
+  --pggm-textarea-border-bottom-width: 0px;
+  --pggm-tooltip-box-shadow-offset-x: 0px;
+  --pggm-tooltip-box-shadow-spread: 0px;
+  --pggm-tooltip-max-width: 364px;
+  --pggm-tooltip-offset: 16px;
+  --pggm-color-white: #ffffff;
+  --pggm-color-black: #000000;
+  --pggm-color-gray-50: #f6f6f6;
+  --pggm-color-gray-100: #e7e8e9;
+  --pggm-color-gray-200: #d3d5d6;
+  --pggm-color-gray-500: #898c8f;
+  --pggm-color-gray-600: #646668;
+  --pggm-color-gray-800: #393a3c;
+  --pggm-color-gray-900: #19191a;
+  --pggm-color-red-50: #fff8f6;
+  --pggm-color-red-100: #fad7d2;
+  --pggm-color-red-200: #f8c5be;
+  --pggm-color-red-300: #f3a297;
+  --pggm-color-red-400: #ed6d5c;
+  --pggm-color-red-500: #b25447;
+  --pggm-color-red-600: #99473b;
+  --pggm-color-red-700: #6c322a;
+  --pggm-color-yellow-50: #fff9ed;
+  --pggm-color-yellow-100: #fef1cc;
+  --pggm-color-yellow-200: #fce399;
+  --pggm-color-yellow-300: #fbd466;
+  --pggm-color-yellow-500: #f8b800;
+  --pggm-color-yellow-700: #ad8000;
+  --pggm-color-yellow-800: #634900;
+  --pggm-color-green-50: #f5fbf7;
+  --pggm-color-green-100: #d0efe5;
+  --pggm-color-green-300: #99ddc7;
+  --pggm-color-green-400: #5cc8a5;
+  --pggm-color-green-600: #00aa72;
+  --pggm-color-green-700: #008055;
+  --pggm-color-green-800: #006644;
+  --pggm-color-green-900: #004e34;
+  --pggm-color-blue-50: #f9f9fc;
+  --pggm-color-blue-100: #cbcde7;
+  --pggm-color-blue-200: #b3b6dc;
+  --pggm-color-blue-300: #868bc7;
+  --pggm-color-blue-500: #4149a8;
+  --pggm-color-blue-600: #373e8f;
+  --pggm-color-blue-700: #2a2f6b;
+  --pggm-color-blue-800: #1e224d;
+  --pggm-color-alpha-light-50: rgba(255, 255, 255, 0.05);
+  --pggm-color-alpha-light-100: rgba(255, 255, 255, 0.1);
+  --pggm-color-alpha-dark-50: rgba(0, 0, 0, 0.05);
+  --pggm-color-alpha-dark-100: rgba(0, 0, 0, 0.1);
+  --pggm-color-alpha-dark-200: rgba(0, 0, 0, 0.2);
+  --pggm-typography-line-height-sm: 1.25;
+  --pggm-typography-line-height-md: 1.5;
+  --pggm-typography-font-size-base: 16px;
+  --pggm-typography-font-size-sm: 16px;
+  --pggm-typography-font-size-lg: 18px;
+  --pggm-typography-font-size-xl: 20px;
+  --pggm-typography-font-size-2xl: 24px;
+  --pggm-typography-font-size-3xl: 28px;
+  --pggm-typography-font-size-4xl: 36px;
+  --pggm-typography-font-weight-regular: 400;
+  --pggm-typography-font-weight-medium: 500;
+  --pggm-typography-font-weight-bold: 700;
+  --pggm-typography-font-weight-semibold: 600;
+  --pggm-typography-font-weight-extrabold: 800;
+  --pggm-typography-font-family-primary: Poppins;
+  --pggm-typography-font-family-secondary: Open Sans;
+  --pggm-space-base: 16px;
+  --pggm-space-inline-2xs: 4px;
+  --pggm-space-inline-xs: 8px;
+  --pggm-space-inline-sm: 12px;
+  --pggm-space-inline-lg: 24px;
+  --pggm-space-inline-xl: 32px;
+  --pggm-space-inline-2xl: 48px;
+  --pggm-space-inline-3xl: 64px;
+  --pggm-space-block-2xs: 4px;
+  --pggm-space-block-xs: 8px;
+  --pggm-space-block-sm: 12px;
+  --pggm-space-block-lg: 24px;
+  --pggm-space-block-xl: 32px;
+  --pggm-space-block-2xl: 48px;
+  --pggm-space-block-3xl: 64px;
+  --pggm-space-text-2xs: 4px; /** 0.25ch */
+  --pggm-space-text-xs: 8px; /** 0.5ch */
+  --pggm-space-text-sm: 12px; /** 0.75ch */
+  --pggm-space-text-lg: 24px; /** 1.5ch */
+  --pggm-space-column-2xs: 4px;
+  --pggm-space-column-xs: 8px;
+  --pggm-space-column-sm: 12px;
+  --pggm-space-column-lg: 24px;
+  --pggm-space-column-xl: 32px;
+  --pggm-space-column-2xl: 48px;
+  --pggm-space-column-3xl: 64px;
+  --pggm-space-row-2xs: 4px;
+  --pggm-space-row-xs: 8px;
+  --pggm-space-row-sm: 12px;
+  --pggm-space-row-lg: 24px;
+  --pggm-space-row-xl: 32px;
+  --pggm-space-row-2xl: 48px;
+  --pggm-space-row-3xl: 64px;
+  --pggm-space-row-4xl: 160px;
+  --pggm-border-radius-base: 16px;
+  --pggm-border-radius-sm: 4px;
+  --pggm-border-radius-md: 8px;
+  --pggm-border-radius-round: 999px;
+  --pggm-border-width-sm: 1px;
+  --pggm-border-width-md: 2px;
+  --pggm-border-width-lg: 4px;
+  --pggm-size-base: 16px;
+  --pggm-size-2xs: 2px;
+  --pggm-size-xs: 4px;
+  --pggm-size-sm: 8px;
+  --pggm-size-lg: 24px;
+  --pggm-size-xl: 32px;
+  --pggm-size-2xl: 48px;
+  --pggm-size-3xl: 64px;
+  --pggm-size-icon-md: 24px;
+  --pggm-size-icon-lg: 32px;
+  --pggm-size-icon-xl: 48px;
+  --pggm-box-shadow-blur-sm: 4px;
+  --pggm-box-shadow-blur-md: 16px;
+  --pggm-box-shadow-blur-lg: 48px;
+  --pggm-box-shadow-offset-sm: 2px;
+  --pggm-box-shadow-offset-md: 8px;
+  --pggm-box-shadow-offset-lg: 16px;
+  --pggm-motion-duration-xs: 150ms;
+  --pggm-focus-border-radius: 4px;
+  --pggm-focus-outline-offset: 1px;
+  --pggm-focus-outline-style: solid;
+  --pggm-accordion-item-border-radius: var(--pggm-border-radius-sm);
+  --pggm-accordion-item-padding-inline-start: var(--pggm-space-inline-lg);
+  --pggm-accordion-item-padding-inline-end: var(--pggm-space-inline-lg);
+  --pggm-accordion-item-content-padding-block-end: var(--pggm-space-block-2xs);
+  --pggm-accordion-item-header-column-gap: var(--pggm-space-inline-xs);
+  --pggm-accordion-item-header-padding-block-start: var(--pggm-space-block-2xs);
+  --pggm-accordion-item-header-padding-block-end: var(--pggm-space-block-2xs);
+  --pggm-accordion-item-header-icon-color: var(--pggm-color-green-700);
+  --pggm-accordion-item-header-icon-background-color: var(--pggm-color-gray-100);
+  --pggm-accordion-item-header-title-padding-block-start: var(--pggm-space-block-2xs);
+  --pggm-accordion-item-header-title-padding-block-end: var(--pggm-space-block-2xs);
+  --pggm-accordion-row-gap: var(--pggm-space-block-xl);
+  --pggm-button-icon-hover-color: var(--pggm-color-white);
+  --pggm-button-primary-color: var(--pggm-color-white);
+  --pggm-button-primary-active-color: var(--pggm-color-white);
+  --pggm-button-primary-hover-color: var(--pggm-color-white);
+  --pggm-button-disabled-background-color: var(--pggm-color-gray-100);
+  --pggm-button-disabled-color: var(--pggm-color-gray-600);
+  --pggm-button-secondary-hover-background-color: var(--pggm-color-green-50);
+  --pggm-button-secondary-background-color: var(--pggm-color-white);
+  --pggm-button-secondary-active-background-color: var(--pggm-color-green-50);
+  --pggm-button-tertiary-hover-background-color: var(--pggm-color-green-50);
+  --pggm-button-tertiary-active-background-color: var(--pggm-color-green-50);
+  --pggm-button-sign-in-hover-background-color: var(--pggm-color-red-600);
+  --pggm-button-sign-in-hover-color: var(--pggm-color-white);
+  --pggm-button-sign-in-background-color: var(--pggm-color-red-500);
+  --pggm-button-sign-in-color: var(--pggm-color-white);
+  --pggm-button-sign-in-active-background-color: var(--pggm-color-red-700);
+  --pggm-button-sign-in-active-color: var(--pggm-color-white);
+  --pggm-button-border-radius: var(--pggm-border-radius-sm);
+  --pggm-button-border-width: var(--pggm-border-width-sm);
+  --pggm-button-column-gap: var(--pggm-space-text-xs);
+  --pggm-button-padding-block-end: var(--pggm-space-block-sm);
+  --pggm-button-padding-block-start: var(--pggm-space-block-sm);
+  --pggm-checkbox-checked-color: var(--pggm-color-white);
+  --pggm-checkbox-checked-disabled-color: var(--pggm-color-white);
+  --pggm-checkbox-checked-hover-color: var(--pggm-color-white);
+  --pggm-checkbox-checked-active-color: var(--pggm-color-white);
+  --pggm-checkbox-checked-invalid-color: var(--pggm-color-white);
+  --pggm-checkbox-indeterminate-color: var(--pggm-color-white);
+  --pggm-checkbox-indeterminate-disabled-color: var(--pggm-color-white);
+  --pggm-checkbox-indeterminate-active-color: var(--pggm-color-white);
+  --pggm-checkbox-indeterminate-hover-color: var(--pggm-color-white);
+  --pggm-checkbox-indeterminate-invalid-color: var(--pggm-color-white);
+  --pggm-checkbox-border-radius: var(--pggm-border-radius-sm);
+  --pggm-checkbox-size: var(--pggm-size-lg);
+  --pggm-checkbox-option-column-gap: var(--pggm-space-column-xs);
+  --pggm-checkbox-label-row-gap: var(--pggm-space-row-xs);
+  --pggm-form-field-description-font-size: var(--pggm-typography-font-size-sm);
+  --pggm-form-field-error-message-row-gap: var(--pggm-space-text-xs);
+  --pggm-form-field-label-optional-font-size: var(--pggm-typography-font-size-sm);
+  --pggm-form-field-label-column-gap: var(--pggm-space-column-sm);
+  --pggm-form-field-label-row-gap: var(--pggm-space-row-xs);
+  --pggm-form-field-invalid-border-inline-start-width: var(--pggm-border-width-md);
+  --pggm-heading-2xl-large-font-size: var(--pggm-typography-font-size-4xl);
+  --pggm-heading-2xl-small-font-size: var(--pggm-typography-font-size-3xl);
+  --pggm-heading-2xl-line-height: var(--pggm-typography-line-height-sm);
+  --pggm-heading-xl-large-font-size: var(--pggm-typography-font-size-2xl);
+  --pggm-heading-xl-small-font-size: var(--pggm-typography-font-size-2xl);
+  --pggm-heading-xl-line-height: var(--pggm-typography-line-height-sm);
+  --pggm-heading-lg-large-font-size: var(--pggm-typography-font-size-xl);
+  --pggm-heading-lg-small-font-size: var(--pggm-typography-font-size-xl);
+  --pggm-heading-lg-line-height: var(--pggm-typography-line-height-md);
+  --pggm-heading-md-line-height: var(--pggm-typography-line-height-md);
+  --pggm-heading-sm-large-font-size: var(--pggm-typography-font-size-sm);
+  --pggm-heading-sm-small-font-size: var(--pggm-typography-font-size-sm);
+  --pggm-heading-sm-line-height: var(--pggm-typography-line-height-md);
+  --pggm-heading-color: var(--pggm-color-gray-800); /** Standaard kleur voor titels. */
+  --pggm-heading-font-family: var(--pggm-typography-font-family-primary); /** Standaard lettertype voor titels. */
+  --pggm-heading-font-weight: var(--pggm-typography-font-weight-medium); /** Standaard lettergewicht voor titels. */
+  --pggm-heading-strong-font-weight: var(--pggm-typography-font-weight-semibold); /** Steviger lettergewicht voor titels. */
+  --pggm-heading-line-height: var(--pggm-typography-line-height-sm);
+  --pggm-link-standalone-color: var(--pggm-color-gray-800);
+  --pggm-link-standalone-font-weight: var(--pggm-typography-font-weight-semibold);
+  --pggm-link-visited-color: var(--pggm-color-blue-500);
+  --pggm-link-visited-icon-color: var(--pggm-color-blue-500);
+  --pggm-link-column-gap: var(--pggm-space-text-xs);
+  --pggm-link-font-weight: var(--pggm-typography-font-weight-regular);
+  --pggm-alert-heading-font-size: var(--pggm-typography-font-size-xl);
+  --pggm-alert-heading-line-height: var(--pggm-typography-line-height-sm);
+  --pggm-alert-column-gap: var(--pggm-space-column-sm);
+  --pggm-alert-border-width: var(--pggm-border-width-md);
+  --pggm-alert-message-row-gap: var(--pggm-space-row-sm);
+  --pggm-alert-message-padding-block-start: var(--pggm-space-block-sm);
+  --pggm-alert-content-row-gap: var(--pggm-space-row-sm);
+  --pggm-ordered-list-padding-inline-start: var(--pggm-space-inline-lg);
+  --pggm-ordered-list-item-margin-block-end: var(--pggm-space-block-2xs);
+  --pggm-ordered-list-item-margin-block-start: var(--pggm-space-block-2xs);
+  --pggm-paragraph-lead-font-size: var(--pggm-typography-font-size-lg);
+  --pggm-paragraph-small-font-size: var(--pggm-typography-font-size-sm);
+  --pggm-radio-checked-color: var(--pggm-color-white);
+  --pggm-radio-checked-hover-color: var(--pggm-color-white);
+  --pggm-radio-checked-active-color: var(--pggm-color-white);
+  --pggm-radio-checked-disabled-color: var(--pggm-color-white);
+  --pggm-radio-checked-invalid-color: var(--pggm-color-white);
+  --pggm-radio-size: var(--pggm-size-lg);
+  --pggm-radio-dot-size: var(--pggm-size-sm);
+  --pggm-radio-border-radius: var(--pggm-border-radius-round);
+  --pggm-radio-option-column-gap: var(--pggm-space-column-xs);
+  --pggm-radio-label-row-gap: var(--pggm-space-row-xs);
+  --pggm-select-padding-block-end: var(--pggm-space-block-sm);
+  --pggm-select-padding-block-start: var(--pggm-space-block-sm);
+  --pggm-select-row-gap: var(--pggm-space-row-sm);
+  --pggm-select-border-radius: var(--pggm-border-radius-sm);
+  --pggm-separator-block-size: var(--pggm-size-2xs);
+  --pggm-table-caption-margin-block-end: var(--pggm-space-block-lg);
+  --pggm-table-caption-font-size: var(--pggm-typography-font-size-xl);
+  --pggm-table-caption-line-height: var(--pggm-typography-line-height-sm);
+  --pggm-table-header-border-block-end-width: var(--pggm-border-width-md);
+  --pggm-table-footer-border-block-end-width: var(--pggm-border-width-sm);
+  --pggm-table-row-border-block-end-width: var(--pggm-border-width-sm);
+  --pggm-table-container-box-shadow-offset-y: var(--pggm-box-shadow-offset-lg);
+  --pggm-table-container-box-shadow-blur: var(--pggm-box-shadow-blur-lg);
+  --pggm-tabs-unselected-background-color: var(--pggm-color-blue-500);
+  --pggm-tabs-unselected-color: var(--pggm-color-white);
+  --pggm-tabs-unselected-hover-background-color: var(--pggm-color-blue-600);
+  --pggm-tabs-unselected-hover-color: var(--pggm-color-white);
+  --pggm-tabs-unselected-padding-block-end: var(--pggm-space-block-sm);
+  --pggm-tabs-unselected-padding-block-start: var(--pggm-space-block-sm);
+  --pggm-tabs-unselected-padding-inline-end: var(--pggm-space-inline-lg);
+  --pggm-tabs-unselected-padding-inline-start: var(--pggm-space-inline-lg);
+  --pggm-tabs-selected-background-color: var(--pggm-color-white);
+  --pggm-tabs-selected-border-color: var(--pggm-color-blue-500);
+  --pggm-tabs-selected-color: var(--pggm-color-blue-500);
+  --pggm-tabs-selected-padding-inline-end: var(--pggm-space-inline-lg);
+  --pggm-tabs-selected-padding-inline-start: var(--pggm-space-inline-lg);
+  --pggm-tabs-selected-border-width: var(--pggm-border-width-md);
+  --pggm-tabs-panel-background-color: var(--pggm-color-white);
+  --pggm-tabs-panel-column-gap: var(--pggm-space-column-xs);
+  --pggm-tabs-scrollable-icon-color: var(--pggm-color-blue-500);
+  --pggm-tabs-border-radius: var(--pggm-border-radius-sm);
+  --pggm-tabs-text-underline: var(--pggm-border-width-sm);
+  --pggm-text-input-border-radius: var(--pggm-border-radius-sm);
+  --pggm-text-input-row-gap: var(--pggm-space-row-xs);
+  --pggm-textarea-padding-inline-end: var(--pggm-space-inline-sm);
+  --pggm-textarea-padding-inline-start: var(--pggm-space-inline-sm);
+  --pggm-tooltip-padding-block-end: var(--pggm-space-block-sm);
+  --pggm-tooltip-padding-block-start: var(--pggm-space-block-sm);
+  --pggm-tooltip-border-radius: var(--pggm-border-radius-sm);
+  --pggm-tooltip-border-width: var(--pggm-border-width-sm);
+  --pggm-tooltip-background-color: var(--pggm-color-white);
+  --pggm-tooltip-border-color: var(--pggm-color-gray-50);
+  --pggm-tooltip-box-shadow-offset-y: var(--pggm-box-shadow-offset-sm);
+  --pggm-tooltip-box-shadow-blur: var(--pggm-box-shadow-blur-sm);
+  --pggm-unordered-list-marker-border-color: var(--pggm-color-green-600);
+  --pggm-unordered-list-marker-color: var(--pggm-color-green-600);
+  --pggm-unordered-list-padding-inline-start: var(--pggm-space-inline-lg);
+  --pggm-unordered-list-item-margin-block-end: var(--pggm-space-block-2xs);
+  --pggm-unordered-list-item-margin-block-start: var(--pggm-space-block-2xs);
+  --pggm-typography-font-size-md: var(--pggm-typography-font-size-base);
+  --pggm-space-inline-md: var(--pggm-space-base);
+  --pggm-space-block-md: var(--pggm-space-base);
+  --pggm-space-text-md: var(--pggm-space-base); /** 1ch */
+  --pggm-space-column-md: var(--pggm-space-base);
+  --pggm-space-row-md: var(--pggm-space-base);
+  --pggm-border-radius-lg: var(--pggm-border-radius-base);
+  --pggm-size-md: var(--pggm-size-base);
+  --pggm-size-icon-sm: var(--pggm-size-base);
+  --pggm-box-shadow-color-sm: var(--pggm-color-alpha-dark-200);
+  --pggm-box-shadow-color-md: var(--pggm-color-alpha-dark-100);
+  --pggm-box-shadow-color-lg: var(--pggm-color-alpha-dark-100);
+  --pggm-root-background-color: var(--pggm-color-gray-50); /** Standaard achtergrondkleur. */
+  --pggm-container-background-color: var(--pggm-color-white); /** Standaard kleur voor de achtergrond van een component die content groepeert. */
+  --pggm-container-border-color: var(--pggm-color-gray-500); /** Standaard kleur voor de rand rondom een component die content groepeert. */
+  --pggm-container-border-width: var(--pggm-border-width-sm); /** Standaard breedte voor de rand rondom een component die content groepeert. */
+  --pggm-document-color: var(--pggm-color-gray-800); /** Standard color for text (and icons). */
+  --pggm-document-subtle-color: var(--pggm-color-gray-600); /** Subtiele kleur voor tekst (en iconen). */
+  --pggm-document-font-family: var(--pggm-typography-font-family-secondary); /** Standard font family for text. */
+  --pggm-document-font-weight: var(--pggm-typography-font-weight-regular); /** Standard font-weight for text. */
+  --pggm-document-strong-font-weight: var(--pggm-typography-font-weight-bold); /** Steviger lettergewicht voor tekst. */
+  --pggm-document-line-height: var(--pggm-typography-line-height-md); /** Standard line-height for text. */
+  --pggm-line-border-color: var(--pggm-color-gray-200); /** Standaard kleur voor de horizontale of verticale lijnen die content scheiden. */
+  --pggm-line-border-width: var(--pggm-border-width-sm); /** Standaard breedte voor de horizontale of verticale lijnen die content scheiden. */
+  --pggm-line-hover-border-color: var(--pggm-color-gray-500);
+  --pggm-interaction-color: var(--pggm-color-green-700); /** Standaard kleur voor interactie. */
+  --pggm-interaction-active-color: var(--pggm-color-green-900); /** Standaard kleur voor interactie bij een active (on press) state.  */
+  --pggm-interaction-hover-color: var(--pggm-color-green-800); /** Standaard kleur voor interactie bij een hover state. */
+  --pggm-focus-outline-color: var(--pggm-color-blue-500); /** Standaard kleur voor de rand bij een focus state. */
+  --pggm-focus-outline-width: var(--pggm-border-width-md); /** Standaard breedte voor rand bij een focus state. */
+  --pggm-form-control-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor form controls. */
+  --pggm-form-control-border-color: var(--pggm-color-gray-500); /** Standaard kleur voor rand rondom form controls. */
+  --pggm-form-control-color: var(--pggm-color-gray-800); /** Standaar kleur voor content binnen form controls. */
+  --pggm-form-control-active-background-color: var(--pggm-color-gray-50); /** Standaard achtergrondkleur voor form controls bij een active (on press) state. */
+  --pggm-form-control-active-border-color: var(--pggm-color-gray-800); /** Standaard kleur voor rand rondom form controls bij een active (on press) state.  */
+  --pggm-form-control-active-color: var(--pggm-color-gray-800); /** Standaard kleur voor content binnen form controls bij een active (on press) state. */
+  --pggm-form-control-active-border-width: var(--pggm-border-width-md); /** Standaard breedte voor rand rondom form controls bij een active (on press) state. */
+  --pggm-form-control-disabled-accent-color: var(--pggm-color-gray-500); /** Standaard kleur bij een disabled state voor form controls die gebruik maken van CSS accent-color property   */
+  --pggm-form-control-disabled-background-color: var(--pggm-color-gray-50); /** Standaard achtergrondkleur voor form controls bij een disabled state. */
+  --pggm-form-control-disabled-border-color: var(--pggm-color-gray-200); /** Standaard kleur voor rand rondom form controls bij een disabled state.  */
+  --pggm-form-control-disabled-color: var(--pggm-color-gray-600); /** Standaard kleur voor data binnen form controls bij een disabled state. */
+  --pggm-form-control-read-only-accent-color: var(--pggm-color-gray-500); /**   */
+  --pggm-form-control-read-only-background-color: var(--pggm-color-gray-50); /** Standaard achtergrondkleur voor form controls bij een read-only state. */
+  --pggm-form-control-read-only-border-color: var(--pggm-color-gray-200); /** Standaard kleur voor rand rondom form controls bij een read-only state. */
+  --pggm-form-control-read-only-color: var(--pggm-color-gray-800); /** Standaard kleur voor data binnen form controls bij een read-only state. */
+  --pggm-form-control-hover-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor form controls bij een hover state. */
+  --pggm-form-control-hover-border-color: var(--pggm-color-gray-800); /** Standaard kleur voor rand rondom form controls bij een hover state.  */
+  --pggm-form-control-hover-color: var(--pggm-color-gray-800); /** Standaard kleur voor content binnen form controls bij een hover state. */
+  --pggm-form-control-invalid-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor form controls bij een invalid state.  */
+  --pggm-form-control-invalid-color: var(--pggm-color-gray-800); /** Standaard kleur voor data binnen form controls bij een invalid state. */
+  --pggm-form-control-invalid-border-width: var(--pggm-border-width-md); /** Standaard breedte voor rand rondom form controls bij een invalid state. */
+  --pggm-form-control-placeholder-color: var(--pggm-color-gray-600); /** Standaard kleur voor placeholder tekst binnen form controls. */
+  --pggm-form-control-border-width: var(--pggm-border-width-sm); /** Standaard breedte voor rand rondom form controls. */
+  --pggm-feedback-informative-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor informatieve feedback. */
+  --pggm-feedback-informative-border-color: var(--pggm-color-blue-500); /** Standaard kleur voor rand rondom informatieve feedback. */
+  --pggm-feedback-informative-color: var(--pggm-color-blue-500); /** Standaard kleur voor tekst (en iconen) voor informatieve feedback. */
+  --pggm-feedback-negative-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor negatieve feedback. */
+  --pggm-feedback-negative-border-color: var(--pggm-color-red-500); /** Standaard kleur voor rand rondom negatieve feedback. */
+  --pggm-feedback-negative-color: var(--pggm-color-red-500); /** Standaard kleur voor tekst (en iconen) voor negatieve feedback. */
+  --pggm-feedback-positive-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor positieve feedback. */
+  --pggm-feedback-positive-border-color: var(--pggm-color-green-700); /** Standaard kleur voor rand rondom positieve feedback. */
+  --pggm-feedback-positive-color: var(--pggm-color-green-700); /** Standaard kleur voor tekst (en iconen) voor positieve feedback. */
+  --pggm-feedback-warning-background-color: var(--pggm-color-white); /** Standaard achtergrondkleur voor waarschuwende feedback. */
+  --pggm-feedback-warning-border-color: var(--pggm-color-yellow-700); /** Standaard kleur voor rand rondom waarschuwende feedback. */
+  --pggm-feedback-warning-color: var(--pggm-color-yellow-700); /** Standaard kleur voor tekst (en iconen) voor waarschuwende feedback. */
+  --pggm-pointer-target-min-size: var(--pggm-size-2xl); /** Standaard minimale grootte voor interactieve elementen. */
+  --pggm-icon-functional-size: var(--pggm-size-icon-md); /** Standaard grootte voor functionele iconen. */
+  --pggm-icon-remarkable-size: var(--pggm-size-icon-lg);
+  --pggm-icon-notifiction-size: var(--pggm-size-icon-xl);
+  --pggm-accordion-item-border-color: var(--pggm-line-border-color);
+  --pggm-accordion-item-padding-block-start: var(--pggm-space-block-md);
+  --pggm-accordion-item-padding-block-end: var(--pggm-space-block-md);
+  --pggm-accordion-item-row-gap: var(--pggm-space-inline-md);
+  --pggm-accordion-item-header-icon-size: var(--pggm-icon-remarkable-size);
+  --pggm-accordion-item-header-title-font-family: var(--pggm-heading-font-family);
+  --pggm-accordion-item-header-title-font-size: var(--pggm-heading-lg-large-font-size);
+  --pggm-accordion-item-header-title-line-height: var(--pggm-heading-line-height);
+  --pggm-accordion-item-header-title-color: var(--pggm-heading-color);
+  --pggm-accordion-item-hover-border-color: var(--pggm-line-hover-border-color);
+  --pggm-button-icon-hover-background-color: var(--pggm-interaction-hover-color);
+  --pggm-button-icon-size: var(--pggm-icon-functional-size);
+  --pggm-button-primary-background-color: var(--pggm-interaction-color);
+  --pggm-button-primary-active-background-color: var(--pggm-interaction-active-color);
+  --pggm-button-primary-hover-background-color: var(--pggm-interaction-hover-color);
+  --pggm-button-secondary-hover-border-color: var(--pggm-interaction-hover-color);
+  --pggm-button-secondary-hover-color: var(--pggm-interaction-hover-color);
+  --pggm-button-secondary-border-color: var(--pggm-interaction-color);
+  --pggm-button-secondary-color: var(--pggm-interaction-color);
+  --pggm-button-secondary-active-border-color: var(--pggm-interaction-active-color);
+  --pggm-button-secondary-active-color: var(--pggm-interaction-active-color);
+  --pggm-button-tertiary-hover-color: var(--pggm-interaction-hover-color);
+  --pggm-button-tertiary-color: var(--pggm-interaction-color);
+  --pggm-button-tertiary-active-color: var(--pggm-interaction-active-color);
+  --pggm-button-font-family: var(--pggm-document-font-family);
+  --pggm-button-padding-inline-end: var(--pggm-space-inline-md);
+  --pggm-button-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-button-min-block-size: var(--pggm-pointer-target-min-size);
+  --pggm-button-min-inline-size: var(--pggm-pointer-target-min-size);
+  --pggm-button-font-weight: var(--pggm-document-strong-font-weight);
+  --pggm-button-line-height: var(--pggm-document-line-height);
+  --pggm-checkbox-background-color: var(--pggm-form-control-background-color);
+  --pggm-checkbox-border-color: var(--pggm-form-control-border-color);
+  --pggm-checkbox-invalid-background-color: var(--pggm-form-control-invalid-background-color);
+  --pggm-checkbox-invalid-border-width: var(--pggm-form-control-invalid-border-width);
+  --pggm-checkbox-disabled-background-color: var(--pggm-form-control-disabled-background-color);
+  --pggm-checkbox-disabled-border-color: var(--pggm-form-control-disabled-border-color);
+  --pggm-checkbox-checked-disabled-background-color: var(--pggm-form-control-disabled-accent-color);
+  --pggm-checkbox-checked-invalid-background-color: var(--pggm-feedback-negative-color);
+  --pggm-checkbox-indeterminate-disabled-background-color: var(--pggm-form-control-disabled-accent-color);
+  --pggm-checkbox-indeterminate-invalid-background-color: var(--pggm-feedback-negative-color);
+  --pggm-checkbox-hover-background-color: var(--pggm-form-control-hover-background-color);
+  --pggm-checkbox-hover-border-color: var(--pggm-form-control-hover-border-color);
+  --pggm-checkbox-active-background-color: var(--pggm-form-control-active-background-color);
+  --pggm-checkbox-active-border-color: var(--pggm-form-control-active-border-color);
+  --pggm-checkbox-option-label-color: var(--pggm-form-control-color);
+  --pggm-checkbox-option-label-disabled-color: var(--pggm-form-control-disabled-color);
+  --pggm-checkbox-option-label-font-family: var(--pggm-document-font-family);
+  --pggm-checkbox-option-label-font-weight: var(--pggm-document-font-weight);
+  --pggm-checkbox-option-label-line-height: var(--pggm-document-line-height);
+  --pggm-checkbox-icon-size: var(--pggm-icon-functional-size);
+  --pggm-checkbox-border-width: var(--pggm-form-control-border-width);
+  --pggm-checkbox-group-row-gap: var(--pggm-space-row-md);
+  --pggm-form-field-description-color: var(--pggm-document-subtle-color);
+  --pggm-form-field-description-font-family: var(--pggm-document-font-family);
+  --pggm-form-field-description-font-weight: var(--pggm-document-font-weight);
+  --pggm-form-field-description-line-height: var(--pggm-document-line-height);
+  --pggm-form-field-error-message-color: var(--pggm-feedback-negative-color);
+  --pggm-form-field-error-message-icon-size: var(--pggm-icon-functional-size);
+  --pggm-form-field-error-message-font-family: var(--pggm-document-font-family);
+  --pggm-form-field-error-message-font-weight: var(--pggm-document-font-weight);
+  --pggm-form-field-error-message-line-height: var(--pggm-document-line-height);
+  --pggm-form-field-label-color: var(--pggm-document-color);
+  --pggm-form-field-label-optional-color: var(--pggm-document-subtle-color);
+  --pggm-form-field-label-optional-font-family: var(--pggm-document-font-family);
+  --pggm-form-field-label-optional-font-weight: var(--pggm-document-font-weight);
+  --pggm-form-field-label-optional-line-height: var(--pggm-document-line-height);
+  --pggm-form-field-label-disabled-color: var(--pggm-form-control-disabled-color);
+  --pggm-form-field-label-font-family: var(--pggm-document-font-family);
+  --pggm-form-field-label-font-weight: var(--pggm-document-strong-font-weight);
+  --pggm-form-field-label-line-height: var(--pggm-document-line-height);
+  --pggm-form-field-invalid-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-form-field-invalid-border-inline-start-color: var(--pggm-feedback-negative-border-color);
+  --pggm-heading-2xl-color: var(--pggm-heading-color);
+  --pggm-heading-2xl-font-family: var(--pggm-heading-font-family);
+  --pggm-heading-2xl-font-weight: var(--pggm-heading-strong-font-weight);
+  --pggm-heading-xl-color: var(--pggm-heading-color);
+  --pggm-heading-xl-font-family: var(--pggm-heading-font-family);
+  --pggm-heading-xl-font-weight: var(--pggm-heading-strong-font-weight);
+  --pggm-heading-lg-color: var(--pggm-heading-color);
+  --pggm-heading-lg-font-family: var(--pggm-heading-font-family);
+  --pggm-heading-lg-font-weight: var(--pggm-heading-font-weight);
+  --pggm-heading-md-color: var(--pggm-heading-color);
+  --pggm-heading-md-font-family: var(--pggm-heading-font-family);
+  --pggm-heading-md-font-weight: var(--pggm-heading-font-weight);
+  --pggm-heading-md-large-font-size: var(--pggm-typography-font-size-md);
+  --pggm-heading-md-small-font-size: var(--pggm-typography-font-size-md);
+  --pggm-heading-sm-color: var(--pggm-heading-color);
+  --pggm-heading-sm-font-family: var(--pggm-heading-font-family);
+  --pggm-heading-sm-font-weight: var(--pggm-heading-font-weight);
+  --pggm-link-icon-color: var(--pggm-interaction-color);
+  --pggm-link-color: var(--pggm-interaction-color);
+  --pggm-link-standalone-icon-color: var(--pggm-interaction-color);
+  --pggm-link-standalone-hover-color: var(--pggm-interaction-hover-color);
+  --pggm-link-standalone-hover-icon-color: var(--pggm-interaction-hover-color);
+  --pggm-link-standalone-active-text-decoration-color: var(--pggm-interaction-active-color);
+  --pggm-link-standalone-active-color: var(--pggm-interaction-active-color);
+  --pggm-link-standalone-icon-size: var(--pggm-size-icon-sm);
+  --pggm-link-standalone-icon-color: var(--pggm-interaction-color);
+  --pggm-link-standalone-row-gap: var(--pggm-space-row-md);
+  --pggm-link-hover-text-decoration-color: var(--pggm-interaction-hover-color);
+  --pggm-link-hover-color: var(--pggm-interaction-hover-color);
+  --pggm-link-active-text-decoration-color: var(--pggm-interaction-active-color);
+  --pggm-link-active-color: var(--pggm-interaction-active-color);
+  --pggm-link-icon-size: var(--pggm-size-icon-sm);
+  --pggm-link-font-family: var(--pggm-document-font-family);
+  --pggm-link-line-height: var(--pggm-document-line-height);
+  --pggm-alert-heading-font-family: var(--pggm-heading-font-family);
+  --pggm-alert-heading-font-weight: var(--pggm-heading-font-weight);
+  --pggm-alert-padding-block-end: var(--pggm-space-block-md);
+  --pggm-alert-padding-block-start: var(--pggm-space-block-md);
+  --pggm-alert-padding-inline-end: var(--pggm-space-inline-md);
+  --pggm-alert-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-alert-informative-background-color: var(--pggm-feedback-informative-background-color);
+  --pggm-alert-informative-border-color: var(--pggm-feedback-informative-border-color);
+  --pggm-alert-informative-color: var(--pggm-document-color);
+  --pggm-alert-icon-informative-color: var(--pggm-feedback-informative-color);
+  --pggm-alert-icon-positive-color: var(--pggm-feedback-positive-color);
+  --pggm-alert-icon-negative-color: var(--pggm-feedback-negative-color);
+  --pggm-alert-icon-warning-color: var(--pggm-feedback-warning-color);
+  --pggm-alert-icon-size: var(--pggm-icon-notifiction-size);
+  --pggm-alert-negative-background-color: var(--pggm-feedback-negative-background-color);
+  --pggm-alert-negative-border-color: var(--pggm-feedback-negative-border-color);
+  --pggm-alert-negative-color: var(--pggm-document-color);
+  --pggm-alert-positive-background-color: var(--pggm-feedback-positive-background-color);
+  --pggm-alert-positive-border-color: var(--pggm-feedback-positive-border-color);
+  --pggm-alert-positive-color: var(--pggm-document-color);
+  --pggm-alert-warning-background-color: var(--pggm-feedback-warning-background-color);
+  --pggm-alert-warning-border-color: var(--pggm-feedback-warning-border-color);
+  --pggm-alert-warning-color: var(--pggm-document-color);
+  --pggm-alert-message-padding-block-end: var(--pggm-space-block-md);
+  --pggm-ordered-list-color: var(--pggm-document-color);
+  --pggm-ordered-list-font-family: var(--pggm-document-font-family);
+  --pggm-ordered-list-font-weight: var(--pggm-document-font-weight);
+  --pggm-ordered-list-line-height: var(--pggm-document-line-height);
+  --pggm-paragraph-color: var(--pggm-document-color);
+  --pggm-paragraph-lead-color: var(--pggm-document-color);
+  --pggm-paragraph-lead-font-family: var(--pggm-document-font-family);
+  --pggm-paragraph-lead-font-weight: var(--pggm-document-font-weight);
+  --pggm-paragraph-lead-line-height: var(--pggm-document-line-height);
+  --pggm-paragraph-small-color: var(--pggm-document-color);
+  --pggm-paragraph-small-font-family: var(--pggm-document-font-family);
+  --pggm-paragraph-small-font-weight: var(--pggm-document-font-weight);
+  --pggm-paragraph-small-line-height: var(--pggm-document-line-height);
+  --pggm-paragraph-font-family: var(--pggm-document-font-family);
+  --pggm-paragraph-font-weight: var(--pggm-document-font-weight);
+  --pggm-paragraph-line-height: var(--pggm-document-line-height);
+  --pggm-radio-active-background-color: var(--pggm-form-control-active-background-color);
+  --pggm-radio-active-border-color: var(--pggm-form-control-active-border-color);
+  --pggm-radio-background-color: var(--pggm-form-control-background-color);
+  --pggm-radio-border-color: var(--pggm-form-control-border-color);
+  --pggm-radio-invalid-background-color: var(--pggm-form-control-invalid-background-color);
+  --pggm-radio-invalid-border-width: var(--pggm-form-control-invalid-border-width);
+  --pggm-radio-disabled-background-color: var(--pggm-form-control-disabled-background-color);
+  --pggm-radio-disabled-border-color: var(--pggm-form-control-disabled-border-color);
+  --pggm-radio-checked-disabled-background-color: var(--pggm-form-control-disabled-accent-color);
+  --pggm-radio-checked-invalid-background-color: var(--pggm-feedback-negative-color);
+  --pggm-radio-hover-background-color: var(--pggm-form-control-hover-background-color);
+  --pggm-radio-hover-border-color: var(--pggm-form-control-hover-border-color);
+  --pggm-radio-option-label-color: var(--pggm-form-control-color);
+  --pggm-radio-option-label-disabled-color: var(--pggm-form-control-disabled-color);
+  --pggm-radio-option-label-font-family: var(--pggm-document-font-family);
+  --pggm-radio-option-label-font-weight: var(--pggm-document-font-weight);
+  --pggm-radio-option-label-line-height: var(--pggm-document-line-height);
+  --pggm-radio-border-width: var(--pggm-form-control-border-width);
+  --pggm-radio-group-row-gap: var(--pggm-space-row-md);
+  --pggm-select-background-color: var(--pggm-form-control-background-color);
+  --pggm-select-border-color: var(--pggm-form-control-border-color);
+  --pggm-select-color: var(--pggm-form-control-color);
+  --pggm-select-icon-color: var(--pggm-form-control-color);
+  --pggm-select-invalid-icon-color: var(--pggm-form-control-color);
+  --pggm-select-invalid-background-color: var(--pggm-form-control-invalid-background-color);
+  --pggm-select-invalid-color: var(--pggm-form-control-invalid-color);
+  --pggm-select-invalid-border-width: var(--pggm-form-control-invalid-border-width);
+  --pggm-select-hover-icon-color: var(--pggm-form-control-color);
+  --pggm-select-hover-background-color: var(--pggm-form-control-hover-background-color);
+  --pggm-select-hover-border-color: var(--pggm-form-control-hover-border-color);
+  --pggm-select-hover-color: var(--pggm-form-control-hover-color);
+  --pggm-select-disabled-icon-color: var(--pggm-form-control-disabled-color);
+  --pggm-select-disabled-background-color: var(--pggm-form-control-disabled-background-color);
+  --pggm-select-disabled-border-color: var(--pggm-form-control-disabled-border-color);
+  --pggm-select-disabled-color: var(--pggm-form-control-disabled-color);
+  --pggm-select-active-icon-color: var(--pggm-form-control-color);
+  --pggm-select-active-background-color: var(--pggm-form-control-background-color);
+  --pggm-select-active-color: var(--pggm-form-control-active-color);
+  --pggm-select-active-border-width: var(--pggm-form-control-active-border-width);
+  --pggm-select-icon-size: var(--pggm-icon-functional-size);
+  --pggm-select-font-family: var(--pggm-document-font-family);
+  --pggm-select-font-weight: var(--pggm-document-font-weight);
+  --pggm-select-padding-inline-end: var(--pggm-space-inline-md);
+  --pggm-select-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-select-border-width: var(--pggm-form-control-border-width);
+  --pggm-select-line-height: var(--pggm-document-line-height);
+  --pggm-separator-color: var(--pggm-line-border-color);
+  --pggm-separator-padding-block-end: var(--pggm-space-block-md);
+  --pggm-separator-padding-block-start: var(--pggm-space-block-md);
+  --pggm-table-header-cell-color: var(--pggm-document-color);
+  --pggm-table-header-cell-font-family: var(--pggm-document-font-family);
+  --pggm-table-header-cell-font-weight: var(--pggm-document-strong-font-weight);
+  --pggm-table-header-cell-line-height: var(--pggm-document-line-height);
+  --pggm-table-caption-color: var(--pggm-heading-color);
+  --pggm-table-caption-font-family: var(--pggm-heading-font-family);
+  --pggm-table-caption-font-weight: var(--pggm-heading-font-weight);
+  --pggm-table-cell-padding-block-end: var(--pggm-space-block-md);
+  --pggm-table-cell-padding-block-start: var(--pggm-space-block-md);
+  --pggm-table-cell-padding-inline-end: var(--pggm-space-inline-md);
+  --pggm-table-cell-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-table-data-cell-color: var(--pggm-document-color);
+  --pggm-table-data-cell-font-family: var(--pggm-document-font-family);
+  --pggm-table-data-cell-font-weight: var(--pggm-document-font-weight);
+  --pggm-table-data-cell-line-height: var(--pggm-document-line-height);
+  --pggm-table-header-border-block-end-color: var(--pggm-line-border-color);
+  --pggm-table-footer-border-block-end-color: var(--pggm-line-border-color);
+  --pggm-table-row-border-block-end-color: var(--pggm-line-border-color);
+  --pggm-table-footer-cell-font-weight: var(--pggm-document-strong-font-weight);
+  --pggm-table-footer-cell-color: var(--pggm-document-color);
+  --pggm-table-footer-cell-font-family: var(--pggm-document-font-family);
+  --pggm-table-footer-cell-line-height: var(--pggm-document-line-height);
+  --pggm-table-container-box-shadow-color: var(--pggm-box-shadow-color-lg);
+  --pggm-tabs-selected-padding-block-end: var(--pggm-space-block-md);
+  --pggm-tabs-selected-padding-block-start: var(--pggm-space-block-md);
+  --pggm-tabs-font-family: var(--pggm-document-font-family);
+  --pggm-tabs-font-weight: var(--pggm-document-strong-font-weight);
+  --pggm-tabs-line-height: var(--pggm-document-line-height);
+  --pggm-text-input-background-color: var(--pggm-form-control-background-color);
+  --pggm-text-input-border-color: var(--pggm-form-control-border-color);
+  --pggm-text-input-color: var(--pggm-form-control-color);
+  --pggm-text-input-invalid-background-color: var(--pggm-form-control-invalid-background-color);
+  --pggm-text-input-invalid-color: var(--pggm-form-control-invalid-color);
+  --pggm-text-input-invalid-border-width: var(--pggm-form-control-invalid-border-width);
+  --pggm-text-input-read-only-background-color: var(--pggm-form-control-read-only-background-color);
+  --pggm-text-input-read-only-border-color: var(--pggm-form-control-read-only-border-color);
+  --pggm-text-input-read-only-color: var(--pggm-form-control-read-only-color);
+  --pggm-text-input-active-background-color: var(--pggm-form-control-background-color);
+  --pggm-text-input-active-color: var(--pggm-form-control-active-color);
+  --pggm-text-input-active-border-width: var(--pggm-form-control-active-border-width);
+  --pggm-text-input-hover-background-color: var(--pggm-form-control-hover-background-color);
+  --pggm-text-input-hover-border-color: var(--pggm-form-control-hover-border-color);
+  --pggm-text-input-hover-color: var(--pggm-form-control-hover-color);
+  --pggm-text-input-disabled-background-color: var(--pggm-form-control-disabled-background-color);
+  --pggm-text-input-disabled-border-color: var(--pggm-form-control-disabled-border-color);
+  --pggm-text-input-disabled-color: var(--pggm-form-control-disabled-color);
+  --pggm-text-input-content-font-family: var(--pggm-document-font-family);
+  --pggm-text-input-content-font-weight: var(--pggm-document-font-weight);
+  --pggm-text-input-padding-block-end: var(--pggm-space-block-md);
+  --pggm-text-input-padding-block-start: var(--pggm-space-block-md);
+  --pggm-text-input-padding-inline-end: var(--pggm-space-inline-md);
+  --pggm-text-input-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-text-input-border-width: var(--pggm-form-control-border-width);
+  --pggm-text-input-error-message-icon-size: var(--pggm-icon-functional-size);
+  --pggm-textarea-padding-block-end: var(--pggm-space-block-md);
+  --pggm-textarea-padding-block-start: var(--pggm-space-block-md);
+  --pggm-textarea-background-color: var(--pggm-form-control-background-color);
+  --pggm-textarea-border-color: var(--pggm-form-control-border-color);
+  --pggm-textarea-color: var(--pggm-form-control-color);
+  --pggm-textarea-invalid-background-color: var(--pggm-form-control-invalid-background-color);
+  --pggm-textarea-invalid-color: var(--pggm-form-control-color);
+  --pggm-textarea-invalid-border-width: var(--pggm-form-control-invalid-border-width);
+  --pggm-textarea-placeholder-color: var(--pggm-form-control-placeholder-color);
+  --pggm-textarea-disabled-background-color: var(--pggm-form-control-disabled-background-color);
+  --pggm-textarea-disabled-border-color: var(--pggm-form-control-disabled-border-color);
+  --pggm-textarea-disabled-color: var(--pggm-form-control-disabled-color);
+  --pggm-textarea-read-only-background-color: var(--pggm-form-control-read-only-background-color);
+  --pggm-textarea-read-only-border-color: var(--pggm-form-control-read-only-border-color);
+  --pggm-textarea-read-only-color: var(--pggm-form-control-read-only-color);
+  --pggm-textarea-hover-background-color: var(--pggm-form-control-hover-background-color);
+  --pggm-textarea-hover-border-color: var(--pggm-form-control-hover-border-color);
+  --pggm-textarea-hover-color: var(--pggm-form-control-hover-color);
+  --pggm-textarea-border-width: var(--pggm-form-control-border-width);
+  --pggm-textarea-font-family: var(--pggm-document-font-family);
+  --pggm-textarea-font-weight: var(--pggm-document-font-weight);
+  --pggm-textarea-line-height: var(--pggm-document-line-height);
+  --pggm-tooltip-padding-inline-end: var(--pggm-space-inline-md);
+  --pggm-tooltip-padding-inline-start: var(--pggm-space-inline-md);
+  --pggm-tooltip-font-family: var(--pggm-document-font-family);
+  --pggm-tooltip-font-weight: var(--pggm-document-font-weight);
+  --pggm-tooltip-color: var(--pggm-document-color);
+  --pggm-tooltip-line-height: var(--pggm-document-line-height);
+  --pggm-tooltip-box-shadow-color: var(--pggm-box-shadow-color-sm);
+  --pggm-unordered-list-color: var(--pggm-document-color);
+  --pggm-unordered-list-font-family: var(--pggm-document-font-family);
+  --pggm-unordered-list-font-weight: var(--pggm-document-font-weight);
+  --pggm-unordered-list-line-height: var(--pggm-document-line-height);
+  --pggm-document-font-size: var(--pggm-typography-font-size-md); /** Standard font-size for text. */
+  --pggm-form-control-accent-color: var(--pggm-interaction-color); /** Standaard kleur voor form controls die gebruik maken van CSS accent-color property. */
+  --pggm-form-control-active-accent-color: var(--pggm-interaction-active-color); /** Standaard kleur bij een active (on press) state voor form controls die gebruik maken van CSS accent-color property  */
+  --pggm-form-control-hover-accent-color: var(--pggm-interaction-hover-color); /** Standaard kleur bij een hover state voor form controls die gebruik maken van CSS accent-color property  */
+  --pggm-form-control-invalid-border-color: var(--pggm-feedback-negative-border-color); /** Standaard kleur voor rand rondom form controls bij een invalid state.  */
+  --pggm-accordion-item-header-title-font-weight: var(--pggm-heading-lg-font-weight);
+  --pggm-button-font-size: var(--pggm-document-font-size);
+  --pggm-checkbox-invalid-border-color: var(--pggm-form-control-invalid-border-color);
+  --pggm-checkbox-checked-background-color: var(--pggm-form-control-accent-color);
+  --pggm-checkbox-checked-hover-background-color: var(--pggm-form-control-hover-accent-color);
+  --pggm-checkbox-checked-active-background-color: var(--pggm-form-control-active-accent-color);
+  --pggm-checkbox-indeterminate-background-color: var(--pggm-form-control-accent-color);
+  --pggm-checkbox-indeterminate-active-background-color: var(--pggm-form-control-active-accent-color);
+  --pggm-checkbox-indeterminate-hover-background-color: var(--pggm-form-control-hover-accent-color);
+  --pggm-checkbox-option-label-font-size: var(--pggm-document-font-size);
+  --pggm-form-field-error-message-font-size: var(--pggm-document-font-size);
+  --pggm-form-field-label-font-size: var(--pggm-document-font-size);
+  --pggm-link-font-size: var(--pggm-document-font-size);
+  --pggm-ordered-list-font-size: var(--pggm-document-font-size);
+  --pggm-paragraph-font-size: var(--pggm-document-font-size);
+  --pggm-radio-invalid-border-color: var(--pggm-form-control-invalid-border-color);
+  --pggm-radio-checked-background-color: var(--pggm-form-control-accent-color);
+  --pggm-radio-checked-hover-background-color: var(--pggm-form-control-hover-accent-color);
+  --pggm-radio-checked-active-background-color: var(--pggm-form-control-active-accent-color);
+  --pggm-radio-option-label-font-size: var(--pggm-document-font-size);
+  --pggm-select-invalid-border-color: var(--pggm-form-control-invalid-border-color);
+  --pggm-select-active-border-color: var(--pggm-form-control-active-accent-color);
+  --pggm-select-font-size: var(--pggm-document-font-size);
+  --pggm-table-header-cell-font-size: var(--pggm-document-font-size);
+  --pggm-table-data-cell-font-size: var(--pggm-document-font-size);
+  --pggm-table-footer-cell-font-size: var(--pggm-document-font-size);
+  --pggm-tabs-font-size: var(--pggm-document-font-size);
+  --pggm-text-input-invalid-border-color: var(--pggm-form-control-invalid-border-color);
+  --pggm-text-input-active-border-color: var(--pggm-form-control-active-accent-color);
+  --pggm-text-input-content-font-size: var(--pggm-document-font-size);
+  --pggm-textarea-invalid-border-color: var(--pggm-form-control-invalid-border-color);
+  --pggm-textarea-font-size: var(--pggm-document-font-size);
+  --pggm-tooltip-font-size: var(--pggm-document-font-size);
+  --pggm-unordered-list-font-size: var(--pggm-document-font-size);
+}
