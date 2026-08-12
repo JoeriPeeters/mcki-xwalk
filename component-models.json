@@ -251,6 +251,39 @@
     ]
   },
   {
+    "id": "pggm-accordion",
+    "fields": []
+  },
+  {
+    "id": "pggm-accordion-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "header",
+        "label": "Titel"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content",
+        "label": "Inhoud"
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "open",
+        "label": "Standaard open"
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "disabled",
+        "label": "Uitgeschakeld"
+      }
+    ]
+  },
+  {
     "id": "pggm-card",
     "fields": [
       {

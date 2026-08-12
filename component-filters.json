@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "media-viewer",
-      "pggm-card"
+      "pggm-card",
+      "pggm-accordion"
     ]
   },
   {
@@ -39,6 +40,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "pggm-accordion",
+    "components": [
+      "pggm-accordion-item"
     ]
   }
 ]
