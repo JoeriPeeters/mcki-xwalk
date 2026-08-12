@@ -4,8 +4,8 @@
  * @param {string} html
  * @returns {Element}
  */
-export function htmlToElement(html) {
+export default function htmlToElement(html) {
   const template = document.createElement('template');
-  template.innerHTML = html.trim(); // de browser parst de string naar DOM
+  template.innerHTML = html.trim();
   return template.content.firstElementChild;
 }
