@@ -1,36 +1,27 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
+import { htmlToElement } from '../../scripts/dom-utils.js';
 
-export default function decorate(block) { // geen async/await meer nodig hier
-  console.log('BLOCK PARENT SECTION:', block.closest('.section')?.outerHTML);
-
-  const accordion = document.createElement('pggm-accordion');
-  moveInstrumentation(block, accordion);
-
-  [...block.children].forEach((row) => {
-    const item = document.createElement('pggm-accordion-item');
-    moveInstrumentation(row, item);
-
-    const cells = [...row.children];
-    const [headerCell, contentCell, openCell, disabledCell] = cells;
-
-    const headerText = headerCell?.querySelector('p')?.textContent?.trim()
-      || headerCell?.textContent?.trim();
-    const headerSpan = document.createElement('span');
-    headerSpan.slot = 'header';
-    headerSpan.textContent = headerText;
-    item.append(headerSpan);
-
-    if (contentCell) {
-      item.append(...contentCell.children);
-    }
-
+export default function decorate(block) {
+  const items = [...block.children].map((row) => {
+    const [headerCell, contentCell, openCell, disabledCell] = [...row.children];
+    const headerText = headerCell?.querySelector('p')?.textContent?.trim() || '';
     const isOpen = openCell?.textContent?.trim().toLowerCase() === 'true';
     const isDisabled = disabledCell?.textContent?.trim().toLowerCase() === 'true';
-    if (isOpen) item.setAttribute('open', 'true');
-    if (isDisabled) item.setAttribute('disabled', 'true');
 
-    accordion.append(item);
+    const item = htmlToElement(`
+      <pggm-accordion-item ${isDisabled ? 'disabled="true"' : ''} ${isOpen ? 'open="true"' : ''}>
+        <span slot="header">${headerText}</span>
+        <p>${contentCell?.textContent?.trim() || ''}</p>
+      </pggm-accordion-item>
+    `);
+
+    moveInstrumentation(row, item);
+    return item;
   });
+
+  const accordion = htmlToElement('<pggm-accordion></pggm-accordion>');
+  moveInstrumentation(block, accordion);
+  accordion.append(...items);
 
   block.replaceChildren(accordion);
 }
