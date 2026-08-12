@@ -39,11 +39,5 @@
       "button",
       "title"
     ]
-  },
-  {
-    "id": "media-viewer",
-    "components": [
-      "media-viewer-image"
-    ]
   }
 ]

@@ -240,23 +240,13 @@
   },
   {
     "id": "media-viewer",
-    "fields": []
-  },
-  {
-    "id": "media-viewer-image",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt text"
+        "name": "greeting",
+        "label": "Greeting Text",
+        "value": "Hello Web component !"
       }
     ]
   }

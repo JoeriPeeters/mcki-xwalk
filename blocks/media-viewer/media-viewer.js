@@ -2,21 +2,12 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 import './media-viewer-component.js';
 
 export default function decorate(block) {
-  const items = [...block.children];
-  if (items.length === 0) return;
+  const greetingEl = block.querySelector('[data-aue-prop="greeting"]');
+  const greeting = greetingEl?.textContent?.trim() || 'Hello Web component !';
 
   const viewer = document.createElement('media-viewer');
+  viewer.setAttribute('greeting', greeting);
   moveInstrumentation(block, viewer);
-
-  items.forEach((item) => {
-    const img = item.querySelector('img');
-    if (!img) return;
-
-    const wrapper = document.createElement('span');
-    moveInstrumentation(item, wrapper);
-    wrapper.append(img);
-    viewer.append(wrapper);
-  });
 
   block.replaceChildren(viewer);
 }
