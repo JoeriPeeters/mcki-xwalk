@@ -18,7 +18,8 @@
       "fragment",
       "media-viewer",
       "pggm-card",
-      "pggm-accordion"
+      "pggm-accordion",
+      "pggm-heading"
     ]
   },
   {

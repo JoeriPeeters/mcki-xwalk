@@ -299,5 +299,68 @@
         "label": "Tekst"
       }
     ]
+  },
+  {
+    "id": "pggm-heading",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "label": "Tekst"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "level",
+        "label": "Niveau (semantisch)",
+        "options": [
+          {
+            "name": "H1",
+            "value": "1"
+          },
+          {
+            "name": "H2",
+            "value": "2"
+          },
+          {
+            "name": "H3",
+            "value": "3"
+          },
+          {
+            "name": "H4",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "size",
+        "label": "Grootte (visueel)",
+        "options": [
+          {
+            "name": "2XL",
+            "value": "2xl"
+          },
+          {
+            "name": "XL",
+            "value": "xl"
+          },
+          {
+            "name": "L",
+            "value": "l"
+          },
+          {
+            "name": "M",
+            "value": "m"
+          },
+          {
+            "name": "S",
+            "value": "s"
+          }
+        ]
+      }
+    ]
   }
 ]
