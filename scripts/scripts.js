@@ -176,6 +176,10 @@ async function loadLazy(doc) {
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 
+  // publiek, generiek package
+  // eslint-disable-next-line import/no-unresolved
+  await import('https://cdn.jsdelivr.net/npm/p-elements-core@2.1.5/dist/p-elements-core-modern.js');
+
   loadPggmDesignSystem(); // lazy load design system
 }
 
