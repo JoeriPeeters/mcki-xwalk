@@ -20,7 +20,7 @@ const CDN_BASE = `https://componenten.cdn.pfzw.nl/design-system/${CDS_VERSION}`;
 async function loadPggmDesignSystem() {
   console.log('loadPggmDesignSystem CALLED');
   loadCSS(`${CDN_BASE}/brands/stipp/tokens.css`);
-  await import(`${CDN_BASE}/components/bundle.js`);
+  await import(`${CDN_BASE}/bundle.js`);
 }
 
 /**
