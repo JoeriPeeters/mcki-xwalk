@@ -1,5 +1,4 @@
 import { PggmAccordionElement } from '@pggm/pggm-components';
-import { PggmAccordionItemElement } from '@pggm/pggm-components';
 
 import { moveInstrumentation } from '../../scripts/scripts.js';
 import htmlToElement from '../../scripts/dom-utils.js';
