@@ -1,3 +1,6 @@
+import { PggmAccordionElement } from '@pggm/pggm-components';
+import { PggmAccordionItemElement } from '@pggm/pggm-components';
+
 import { moveInstrumentation } from '../../scripts/scripts.js';
 import htmlToElement from '../../scripts/dom-utils.js';
 
@@ -13,7 +16,7 @@ export default function decorate(block) {
     //  3. Conditionele attributen inline, via template-expressies
 
     const item = htmlToElement(`
-      <pggm-accordion-item ${isDisabled ? 'disabled="true"' : ''} ${isOpen ? 'open="true"' : ''}>
+      <pggm-accordion-item  ${isDisabled ? 'disabled="true"' : ''} ${isOpen ? 'open="true"' : ''}>
         <span slot="header">${headerText}</span>
         <p>${contentCell?.textContent?.trim() || ''}</p>
       </pggm-accordion-item>
