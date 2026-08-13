@@ -14,12 +14,12 @@ import {
 /**
  * Load design system (bundle)
  */
-const CDS_VERSION = '2.0.20';
+const CDS_VERSION = '3.0.0-rc2908154.235';
 const CDN_BASE = `https://componenten.cdn.pfzw.nl/design-system/${CDS_VERSION}`;
 
 async function loadPggmDesignSystem() {
   console.log('loadPggmDesignSystem CALLED');
-  loadCSS(`${CDN_BASE}/fundamentals/stipp/tokens.css`);
+  loadCSS(`${CDN_BASE}/brands/stipp/tokens.css`);
   await import(`${CDN_BASE}/components/bundle.js`);
 }
 
