@@ -1,33 +1,27 @@
-import { PggmAccordionElement } from '@pggm/pggm-components';
-
-import { moveInstrumentation } from '../../scripts/scripts.js';
-import htmlToElement from '../../scripts/dom-utils.js';
-
-export default function decorate(block) {
+import { moveInstrumentation } from "../../scripts/scripts.js";
+import htmlToElement from "../../scripts/dom-utils.js";
+function decorate(block) {
   const items = [...block.children].map((row) => {
-    const [headerCell, contentCell, openCell, disabledCell] = [...row.children];
-    const headerText = headerCell?.querySelector('p')?.textContent?.trim() || '';
-    const isOpen = openCell?.textContent?.trim().toLowerCase() === 'true';
-    const isDisabled = disabledCell?.textContent?.trim().toLowerCase() === 'true';
-
-    //  1. Transformeer een string naar een echt DOM-element waar manipulatie op gedaan kan worden
-    //  2. Meerdere attributen/children in één leesbare, declaratieve stap (ipv losse regels)
-    //  3. Conditionele attributen inline, via template-expressies
-
+    const cells = [...row.children];
+    const [headerCell, contentCell, openCell, disabledCell] = cells;
+    const headerText = headerCell?.querySelector("p")?.textContent?.trim() || "";
+    const isOpen = openCell?.textContent?.trim().toLowerCase() === "true";
+    const isDisabled = disabledCell?.textContent?.trim().toLowerCase() === "true";
     const item = htmlToElement(`
-      <pggm-accordion-item  ${isDisabled ? 'disabled="true"' : ''} ${isOpen ? 'open="true"' : ''}>
+      <pggm-accordion-item ${isDisabled ? 'disabled="true"' : ""} ${isOpen ? 'open="true"' : ""}>
         <span slot="header">${headerText}</span>
-        <p>${contentCell?.textContent?.trim() || ''}</p>
+        <p>${contentCell?.textContent?.trim() || ""}</p>
       </pggm-accordion-item>
     `);
-
     moveInstrumentation(row, item);
     return item;
   });
-
-  const accordion = htmlToElement('<pggm-accordion></pggm-accordion>');
+  const accordion = htmlToElement("<pggm-accordion></pggm-accordion>");
   moveInstrumentation(block, accordion);
   accordion.append(...items);
-
   block.replaceChildren(accordion);
 }
+export {
+  decorate as default
+};
+//# sourceMappingURL=pggm-accordion.js.map
