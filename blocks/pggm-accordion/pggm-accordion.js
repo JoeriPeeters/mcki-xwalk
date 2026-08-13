@@ -8,9 +8,9 @@ export default function decorate(block) {
     const isOpen = openCell?.textContent?.trim().toLowerCase() === 'true';
     const isDisabled = disabledCell?.textContent?.trim().toLowerCase() === 'true';
 
-    //1. Transformeer een string naar een echt DOM-element waar manipulatie op gedaan kan worden
-    //2. Meerdere attributen/children in één leesbare, declaratieve stap (ipv losse regels)
-    //3. Conditionele attributen inline, via template-expressies
+    //  1. Transformeer een string naar een echt DOM-element waar manipulatie op gedaan kan worden
+    //  2. Meerdere attributen/children in één leesbare, declaratieve stap (ipv losse regels)
+    //  3. Conditionele attributen inline, via template-expressies
 
     const item = htmlToElement(`
       <pggm-accordion-item ${isDisabled ? 'disabled="true"' : ''} ${isOpen ? 'open="true"' : ''}>
