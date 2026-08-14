@@ -19,7 +19,8 @@
       "media-viewer",
       "pggm-card",
       "pggm-accordion",
-      "pggm-heading"
+      "pggm-heading",
+      "typescript-card"
     ]
   },
   {
