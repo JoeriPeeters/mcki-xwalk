@@ -1,5 +1,0 @@
-mountpoints:
-  /:
-    url: "https://author-p24103-e71623.adobeaemcloud.com/bin/franklin.delivery/JoeriPeeters/mcki-xwalk/main/index"
-    type: "markup"
-    suffix: ".html"
